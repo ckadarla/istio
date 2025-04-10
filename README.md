@@ -1,7 +1,6 @@
 **Istio Installation Guide** 
 ---
 
-```markdown
 # 🚀 Istio Installation Guide
 
 This guide walks you through installing **Istio** on any standard Kubernetes cluster (GKE, EKS, AKS, Minikube, OpenShift, etc.) using the `istioctl` CLI.
@@ -14,23 +13,22 @@ This guide walks you through installing **Istio** on any standard Kubernetes clu
 - `kubectl` configured to access the cluster
 - Optional: `helm` (for advanced setups)
 
----
-
 ## 🔹 Step 1: Download Istio CLI
 
 ```
 curl -L https://istio.io/downloadIstio | sh -
 cd istio-*
 export PATH=$PWD/bin:$PATH
+
 ```
 
 Verify Istio CLI:
 
 ```
 istioctl version
+
 ```
 
----
 
 ## 🔹 Step 2: Install Istio with Default Profile
 
