@@ -125,6 +125,15 @@ http://localhost:20001
 ![image](https://github.com/user-attachments/assets/a933c709-d8ab-4a63-b5c6-d9630f13e156)
 
 ---
+### Access the product page 
+```
+kubectl port-forward svc/productpage 9080:9080
+```
+
+```
+http://localhost:9080
+```
+![image](https://github.com/user-attachments/assets/14630aad-4bbf-49b6-b4f8-be7c52e64095)
 
 ## 🧹 Uninstall Istio
 
