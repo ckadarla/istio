@@ -113,7 +113,10 @@ Port forward to Kiali UI:
 ```bash
 kubectl port-forward svc/kiali -n istio-system 20001:20001
 ```
-
+or 
+```
+istioctl dashboard kiali
+```
 Visit in your browser:
 
 ```
