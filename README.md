@@ -115,13 +115,14 @@ kubectl port-forward svc/kiali -n istio-system 20001:20001
 ```
 or 
 ```
-istioctl dashboard kiali
+istioctl dashboard kiali 
 ```
 Visit in your browser:
 
 ```
 http://localhost:20001
 ```
+![image](https://github.com/user-attachments/assets/a933c709-d8ab-4a63-b5c6-d9630f13e156)
 
 ---
 
