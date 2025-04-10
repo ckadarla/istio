@@ -1,8 +1,5 @@
 **Istio Installation Guide** 
 ---
-
-# 🚀 Istio Installation Guide
-
 This guide walks you through installing **Istio** on any standard Kubernetes cluster (GKE, EKS, AKS, Minikube, OpenShift, etc.) using the `istioctl` CLI.
 
 ---
@@ -54,7 +51,6 @@ kubectl label namespace default istio-injection=enabled
 
 > Replace `default` with your actual app namespace if needed.
 
----
 
 ## 🔹 Step 4: Deploy the Sample App (Optional)
 
@@ -70,7 +66,6 @@ Check status:
 kubectl get pods
 ```
 
----
 
 ## 🔹 Step 5: Expose App Using Istio Gateway
 
@@ -90,7 +85,6 @@ Access the app:
 http://<EXTERNAL-IP>/productpage
 ```
 
----
 
 ## 🔹 Step 6: Verify the Installation
 
@@ -98,7 +92,6 @@ http://<EXTERNAL-IP>/productpage
 istioctl verify-install
 ```
 
----
 
 ## 🔹 Step 7: Access Kiali Dashboard (Optional)
 
@@ -134,7 +127,6 @@ kubectl label namespace default istio-injection-
 ```
 
 ---
-
 ## ⚠️ Notes for OpenShift Users
 
 - Grant required SCC permissions:
@@ -152,11 +144,3 @@ kubectl label namespace default istio-injection-
 - [Bookinfo Sample](https://istio.io/latest/docs/examples/bookinfo/)
 - [Kiali Dashboard](https://kiali.io/)
 
----
-
-Happy Meshing! ✨
-```
-
----
-
-Let me know if you want a version tailored for **OpenShift**, **production with mTLS**, or **Helm-based installs**.
