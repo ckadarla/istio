@@ -11,12 +11,18 @@ This guide walks you through installing **Istio** on any standard Kubernetes clu
 - Optional: `helm` (for advanced setups)
 
 ## 🔹 Step 1: Download Istio CLI
-
+use my repo 
 ```
 git clone https://github.com/ckadarla/istio.git
 cd istio/istio-1.25.1
 export PATH=$PWD/bin:$PATH
 
+```
+or 
+```bash
+curl -L https://istio.io/downloadIstio | sh -
+cd istio-*
+export PATH=$PWD/bin:$PATH
 ```
 
 Verify Istio CLI:
